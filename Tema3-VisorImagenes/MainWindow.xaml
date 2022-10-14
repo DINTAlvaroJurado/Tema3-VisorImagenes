@@ -1,0 +1,39 @@
+﻿<Window x:Class="Tema3_VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_VisorImagenes"
+        mc:Ignorable="d"
+        Title="Visor" Height="600" Width="700" MinHeight="600" MinWidth="700" Icon="assets/Rokey-Smooth-Metal-Rising-Dragon-Internet-explorer.ico">
+    <DockPanel LastChildFill="False">
+        <DockPanel Background="LightBlue" DockPanel.Dock="Bottom" Height="60" Margin="10" LastChildFill="False">
+            <Label FontFamily="Rubik" FontSize="20" Width="200" VerticalAlignment="Center" DockPanel.Dock="Left">Nº de Imagenes: 10</Label>
+            <Label FontFamily="Rubik" FontSize="20" VerticalAlignment="Center" DockPanel.Dock="Right">Diseñado por Álvaro Jurado</Label>
+        </DockPanel>
+        <Border DockPanel.Dock="Right" Margin="10" BorderBrush="Black" BorderThickness="2" CornerRadius="4">
+            <DockPanel Background="LightGreen" Width="120" LastChildFill="False">
+                <Button Margin="5" DockPanel.Dock="Top">Añadir imagen</Button>
+                <Button Margin="5" DockPanel.Dock="Top">Eliminar imagen</Button>
+                <Button Margin="5" DockPanel.Dock="Top">Eliminar todas</Button>
+                <Button Margin="5" DockPanel.Dock="Bottom">Rotar</Button>
+                <Button Margin="5" DockPanel.Dock="Bottom">Recortar</Button>
+            </DockPanel>
+        </Border>
+        <StackPanel>
+            <DockPanel HorizontalAlignment="Center">
+                    <Label FontFamily="Rubik" FontSize="40">Visor de imágenes</Label>
+                </DockPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120" ></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+                    <Image Source="assets/episodioIV.jpg" Width="120"></Image>
+            </WrapPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>
